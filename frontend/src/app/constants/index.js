@@ -14,7 +14,7 @@ import {
     works4 
 } from "../assets/images";
 export const navbar = {
-    name: 'Digiskuy',
+    name: 'YourAds',
     cta: 'Get in Touch',
     links: [
         {
@@ -105,26 +105,38 @@ export const ourTeam = {
     body: 'Team collaboration in which team members are experienced \npeople in their fields',
     team: [
         {
-            role: 'CEO',
-            name: 'Dimitri',
-            img: `${team1.src}`,
+            role: 'Programmer',
+            name: 'Harshit Raj',
+            img: `${team4.src}`,
             altText: 'Dimitri'
         },
         {
-            role: 'Product Designer',
-            name: 'Stephan. Jr',
-            img: `${team2.src}`,
+            role: 'Marketer',
+            name: 'Raj Aryan',
+            img: `${team4.src}`,
             altText: 'Stephan'
         },
         {
-            role: 'Programmer',
-            name: 'Lusenko Larov',
-            img: `${team3.src}`,
+            role: 'Videographer',
+            name: 'Subhomoy ',
+            img: `${team4.src}`,
             altText: 'Lusenko Larov'
         },
         {
-            role: 'Marketer',
-            name: 'Andi Chen',
+            role: 'Videographer',
+            name: 'Prithvi',
+            img: `${team4.src}`,
+            altText: 'Andi Chen'
+        },
+        {
+            role: 'Graphics Designer',
+            name: 'Achintya',
+            img: `${team4.src}`,
+            altText: 'Andi Chen'
+        },
+        {
+            role: 'Video Editor',
+            name: 'Kartik',
             img: `${team4.src}`,
             altText: 'Andi Chen'
         }
@@ -132,7 +144,7 @@ export const ourTeam = {
 };
 
 export const footer = {
-    name: 'Digiskuy',
+    name: 'YourAds',
     cta: [
         {
             icon: `${linkedin.src}`,

@@ -13,7 +13,7 @@ const OurTeam = () => {
 
     const parallaxEasingLeft = useParallax({
         easing: [1, -0.75, 0.5, 1.34],
-        translateX: [0, -100],
+        translateX: [0, -200],
         translateY: [500],
     });
   
@@ -28,7 +28,7 @@ const OurTeam = () => {
         </div>
         <div 
             ref={parallaxEasingLeft.ref}
-            className='team-container mt-12 grid gap-7 grid-rows-2 grid-cols-2 md:grid-rows-1 md:grid-cols-4'
+            className='team-container mt-12 flex justify-around  w-[250vh]'
         >
             {
                 ourTeam.team.map((member,index) => (
