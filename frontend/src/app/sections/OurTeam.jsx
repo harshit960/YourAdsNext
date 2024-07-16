@@ -13,8 +13,8 @@ const OurTeam = () => {
 
     const parallaxEasingLeft = useParallax({
         easing: [1, -0.75, 0.5, 1.34],
-        translateX: [0, -200],
-        translateY: [500],
+        translateX: [0, -40],
+        translateY: [0, 0],
     });
   
     return (
