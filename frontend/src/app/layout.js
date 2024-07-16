@@ -2,6 +2,7 @@
 import { Inter } from "next/font/google";
 import "./index.css";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +12,16 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 export default function RootLayout({ children }) {
+  
+  useEffect(() => {
+    (
+      async () => {
+        const { default: LocomotiveScroll } = await import("locomotive-scroll");
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, []);
+
   return (
     <html lang="en">
       <body className={inter.className}>
