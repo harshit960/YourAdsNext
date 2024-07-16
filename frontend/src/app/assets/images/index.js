@@ -17,7 +17,6 @@ import works1 from './works-1.png';
 import works2 from './works-2.png';
 import works3 from './works-3.png';
 import works4 from './works-4.png';
-
 export {
     backEnd,
     design,

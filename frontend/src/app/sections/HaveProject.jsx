@@ -15,12 +15,12 @@ const HaveProject = () => {
         <h1 
           ref={parallaxEasingCaption.ref}
           className='font-heading text-[40px] md:text-[120px] md:leading-[150px]'>
-            <span className='text-primary'>Have a project?</span> Let's Discuss
+            <span className='text-primary'>Have a project</span> Lets Discuss
         </h1>
         <div className='get-in__touch mt-12 md:mt-24'>
             <img 
               className='w-[60px] h-[60px] md:w-[130px] md:h-[120px] mx-auto px-2 py-2 bg-primary drop-shadow-normal' 
-              src={mail} 
+              src={mail.src} 
               alt='mail' 
             />
         </div>

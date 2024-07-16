@@ -6,7 +6,7 @@ import Tilt from 'react-parallax-tilt';
 import { useParallax } from "react-scroll-parallax";
 
 const OurServices = () => {
-
+console.log(services);
     const parallaxEasing = useParallax({
         easing: "easeOutQuad",
         translateX: [50, -100],
@@ -31,8 +31,8 @@ const OurServices = () => {
             className='service-cards mt-7 md:mt-14 flex flex-1 flex-col gap-7 md:flex-row justify-between'
         >
             {
-                services.provides.map((provide) => (
-                    <Tilt>
+                services.provides.map((provide,index) => (
+                    <Tilt key={index}>
                         <CardService 
                             {...provide}
                         />

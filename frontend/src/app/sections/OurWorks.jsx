@@ -31,8 +31,8 @@ const OurWorks = () => {
             className='works-container w-3/4 mx-auto mt-7 md:mt-14 grid md:grid-rows-2 md:grid-cols-2 gap-8'
         >
             {
-                ourWorks.works.map((work) => (
-                    <Tilt>
+                ourWorks.works.map((work,index) => (
+                    <Tilt key={index}>
                         <CardWorks {...work} />
                     </Tilt>
                 ))

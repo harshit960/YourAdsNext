@@ -23,10 +23,10 @@ const AboutUs = () => {
         <div 
           ref={parallaxEasing.ref}
           className='video-player w-full h-[245px] md:h-[640px] mx-auto md:relative'>
-            <img src={videoPlayer} alt='video-player' />
+            <img src={videoPlayer.src} alt='video-player' />
             <img 
               className='w-[40px] h-[40px] md:w-[100px] md:h-[100px] relative md:absolute -top-1/2 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow' 
-              src={play} 
+              src={play.src} 
               alt='play' 
             />
         </div>

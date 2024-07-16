@@ -25,7 +25,7 @@ const OurStack = () => {
     <section className='our-stack flex flex-1 flex-col-reverse md:flex-row md:justify-between md:items-center gap-7 md:gap-44 px-6 md:px-24 mt-12 md:mt-24'>
       <div className='stack-glass w-full md:w-1/2'>
         <Tilt>
-          <img ref={parallaxEasingLeft.ref} src={techStack} alt='tech-stack' />
+          <img ref={parallaxEasingLeft.ref} src={techStack.src} alt='tech-stack' />
         </Tilt>
       </div>
       <h2 

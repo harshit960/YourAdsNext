@@ -19,10 +19,10 @@ const Navbar = () => {
         <div className='hamburger' onClick={handleClick}>
           <i className={click ? 'fa-regular fa-circle-xmark text-[30px]' : 'fa-solid fa-bars text-[30px]'}></i>
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <ul className={click ? 'hidden nav-menu active' : 'hidden nav-menu'}>
           {
-            navbar.links.map((link) => (
-              <li className='nav-item hover:cursor-pointer hover:text-primary'>
+            navbar.links.map((link,index) => (
+              <li key={index} className='nav-item hover:cursor-pointer hover:text-primary'>
                 <a href={`#${link.id}`}>{link.name}</a>
               </li>
             ))

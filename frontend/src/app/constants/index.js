@@ -1,3 +1,4 @@
+
 import { instagram, linkedin } from "../assets/icons";
 import { 
     backEnd, 
@@ -12,7 +13,6 @@ import {
     works3, 
     works4 
 } from "../assets/images";
-
 export const navbar = {
     name: 'Digiskuy',
     cta: 'Get in Touch',
@@ -56,17 +56,17 @@ export const services = {
     provides: [
         {
             title: 'Design',
-            img: `${design}`,
+            img: `${design.src}`,
             altText: 'Design'
         },
         {
             title: 'Front End',
-            img: `${frontEnd}`,
+            img: `${frontEnd.src}`,
             altText: 'Front End'
         },
         {
             title: 'Back End',
-            img: `${backEnd}`,
+            img: `${backEnd.src}`,
             altText: 'Back End'
         }
     ]
@@ -78,22 +78,22 @@ export const ourWorks = {
     works: [
         {
             id: '1',
-            img: `${works1}`,
+            img: `${works1.src}`,
             altText: 'works-1'
         },
         {
             id: '2',
-            img: `${works2}`,
+            img: `${works2.src}`,
             altText: 'works-2'
         },
         {
             id: '3',
-            img: `${works3}`,
+            img: `${works3.src}`,
             altText: 'works-3'
         },
         {
             id: '4',
-            img: `${works4}`,
+            img: `${works4.src}`,
             altText: 'works-4'
         }
     ]
@@ -107,25 +107,25 @@ export const ourTeam = {
         {
             role: 'CEO',
             name: 'Dimitri',
-            img: `${team1}`,
+            img: `${team1.src}`,
             altText: 'Dimitri'
         },
         {
             role: 'Product Designer',
             name: 'Stephan. Jr',
-            img: `${team2}`,
+            img: `${team2.src}`,
             altText: 'Stephan'
         },
         {
             role: 'Programmer',
             name: 'Lusenko Larov',
-            img: `${team3}`,
+            img: `${team3.src}`,
             altText: 'Lusenko Larov'
         },
         {
             role: 'Marketer',
             name: 'Andi Chen',
-            img: `${team4}`,
+            img: `${team4.src}`,
             altText: 'Andi Chen'
         }
     ]
@@ -135,11 +135,11 @@ export const footer = {
     name: 'Digiskuy',
     cta: [
         {
-            icon: `${linkedin}`,
+            icon: `${linkedin.src}`,
             altText: 'Linkedin'
         },
         {
-            icon: `${instagram}`,
+            icon: `${instagram.src}`,
             altText: 'Instagram'
         }
     ],

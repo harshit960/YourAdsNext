@@ -31,8 +31,8 @@ const OurTeam = () => {
             className='team-container mt-12 grid gap-7 grid-rows-2 grid-cols-2 md:grid-rows-1 md:grid-cols-4'
         >
             {
-                ourTeam.team.map((member) => (
-                    <Team
+                ourTeam.team.map((member,index) => (
+                    <Team key={index}
                         {...member}
                     />
                 ))
