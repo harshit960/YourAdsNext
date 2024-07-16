@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+@tailwind base;
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url(/src/assets/fonts/Mona-Sans-MediumWide.woff);
+}
+
+@tailwind components;
+
+.nav-menu {
+  @layer w-full xs:absolute flex flex-col gap-3 md:gap-10 items-center top-0 left-[100%] xs:py-20 slide
+}
+
+.nav-menu.active {
+  @layer w-full xs:absolute flex flex-col gap-3 md:gap-10 items-center top-0 left-0 xs:py-20 bg-[var(--bg-primary)] -z-10 right-0 shadow-2xl slide
+}
+
+.bg-blur {
+  @layer bg-white/20 backdrop-filter backdrop-blur-3xl
+}
+
+@tailwind utilities;
+
+:root {
+  --bg-primary: #171926;
+  --text-white: #ffffff
+}
+
+* {
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-family: 'IBM Plex Mono';
+  font-size: 20px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  backdrop-filter: blur(64px);
+}
+
+.slide {
+  transition: all ease-in-out 400ms;
+}
