@@ -8,6 +8,10 @@ import OurStack from "./sections/OurStack";
 import OurTeam from "./sections/OurTeam";
 import OurWorks from "./sections/OurWorks";
 
+export const metadata = {
+  title: 'YourAds | Home',
+  description: 'Re-imagining Reality',
+}
 export default function Home() {
 
   return (
