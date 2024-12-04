@@ -13,6 +13,10 @@
   @layer w-full xs:absolute flex flex-col gap-3 md:gap-10 items-center top-0 left-[100%] xs:py-20 slide
 }
 
+* {
+  user-select: none;
+}
+
 .nav-menu.active {
   @layer w-full xs:absolute flex flex-col gap-3 md:gap-10 items-center top-0 left-0 xs:py-20 bg-[var(--bg-primary)] -z-10 right-0 shadow-2xl slide
 }

@@ -47,7 +47,7 @@ export const hero = {
 
 export const aboutUs = {
     heading: 'About Us',
-    body: 'Digital agency based on Surabaya that will provide the best \nservice to realize your idea through design and technology for \nyour business growth.'
+    body: 'Simplifying your journey online with professional digital solutions tailored for your business growth.'
 };
 
 export const services = {
@@ -68,6 +68,21 @@ export const services = {
             title: 'Back End',
             img: `${backEnd.src}`,
             altText: 'Back End'
+        },
+        {
+            title: 'App Dev',
+            img: `${frontEnd.src}`,
+            altText: 'App Dev'
+        },
+        {
+            title: 'Social Media Management',
+            img: `${backEnd.src}`,
+            altText: 'Social Media Management'
+        },
+        {
+            title: 'Ads Management',
+            img: `${backEnd.src}`,
+            altText: 'Ads Management'
         }
     ]
 };

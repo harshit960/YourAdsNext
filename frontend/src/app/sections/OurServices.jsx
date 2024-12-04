@@ -1,47 +1,60 @@
 "use client"
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import CardService from '../components/CardService';
 import { services } from '../constants';
 import Tilt from 'react-parallax-tilt';
-import { useParallax } from "react-scroll-parallax";
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const OurServices = () => {
-console.log(services);
-    const parallaxEasing = useParallax({
-        easing: "easeOutQuad",
-        translateX: [50, -100],
-    });
+    const sectionRef = useRef(null);
+    const cardsContainerRef = useRef(null);
 
-    const parallaxCardEasing = useParallax({
-        easing: [1, -0.75, 0.5, 1.34],
-        translateX: [0, -100],
-        translateY: [100],
-    });
+    useEffect(() => {
+        const section = sectionRef.current;
+        const cards = cardsContainerRef.current;
 
-  return (
-    <div className='our-services mt-12 md:mt-24 px-6 md:px-24' id='3'>
-        <h2 
-            ref={parallaxEasing.ref}
-            className='font-heading text-[24px] md:text-[64px]'
-        >
-            {services.heading}
-        </h2>
-        <div 
-            ref={parallaxCardEasing.ref}
-            className='service-cards mt-7 md:mt-14 flex flex-1 flex-col gap-7 md:flex-row justify-between'
-        >
-            {
-                services.provides.map((provide,index) => (
-                    <Tilt key={index}>
-                        <CardService 
-                            {...provide}
-                        />
+        // Create the horizontal scroll animation
+        let ctx = gsap.context(() => {
+            gsap.to(cards, {
+                x: () => -(cards.scrollWidth - window.innerWidth + 48), // 48px for padding
+                ease: "none",
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top top",
+                    end: () => `+=${cards.scrollWidth - window.innerWidth}`,
+                    pin: true,
+                    scrub: 1,
+                    invalidateOnRefresh: true,
+                }
+            });
+        });
+
+        return () => ctx.revert();
+    }, []);
+
+    return (
+        <div ref={sectionRef} className='our-services relative h-screen' id='3'>
+            <div className='px-6 md:px-24 pt-12 md:pt-24'>
+                <h2 className='font-heading text-[24px] md:text-[64px]'>
+                    {services.heading}
+                </h2>
+            </div>
+            
+            <div 
+                ref={cardsContainerRef}
+                className='service-cards mt-7 md:mt-14 flex flex-nowrap gap-7 px-6 md:px-24'
+            >
+                {services.provides.map((provide, index) => (
+                    <Tilt key={index} className='flex-shrink-0 w-[300px] md:w-[400px]'>
+                        <CardService {...provide} />
                     </Tilt>
-                ))
-            }
+                ))}
+            </div>
         </div>
-    </div>
-  )
+    );
 }
 
-export default OurServices
+export default OurServices;

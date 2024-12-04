@@ -9,14 +9,15 @@ import team2 from './team-2.png';
 import team3 from './team-3.png';
 import team4 from './team-4.png';
 import react from './react.png';
-import techStack from './tech-stack.png';
-import videoPlayer from './video-player.png';
+import techStack from './tech-stack.svg';
+import videoPlayer from './AboutUspostcard.png';
 import webpack from './webpack.png';
 import wordpress from './wordpress.png';
 import works1 from './works-1.png';
 import works2 from './works-2.png';
 import works3 from './works-3.png';
 import works4 from './works-4.png';
+import logo from './logo.png';
 export {
     backEnd,
     design,
@@ -36,6 +37,7 @@ export {
     works1,
     works2,
     works3,
-    works4
+    works4,
+    logo
 }
 

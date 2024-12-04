@@ -22,8 +22,8 @@ export default function Home() {
         <AboutUs />
         <OurStack />
         <OurServices />
-        <OurWorks />
-        <OurTeam />
+        {/* <OurWorks /> */}
+        {/* <OurTeam /> */}
         <HaveProject />
         <Footer />
       </div>
