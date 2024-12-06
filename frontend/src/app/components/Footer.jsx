@@ -18,7 +18,9 @@ const Footer = () => {
             <div className='socmed flex gap-3 md:gap-5'>
                 {
                     footer.cta.map((icon,index) => (
-                        <img key={index} className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={icon.icon} alt={icon.altText} />
+                        <a href={icon.href} key={index}>
+                            <img className='w-[40px] h-[40px] md:w-[70px] md:h-[70px]' src={icon.icon} alt={icon.altText} />
+                        </a>
                     ))
                 }
             </div>

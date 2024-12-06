@@ -18,6 +18,9 @@ import works2 from './works-2.png';
 import works3 from './works-3.png';
 import works4 from './works-4.png';
 import logo from './logo.png';
+import appdev from './appdev.png';
+import adsmanagemet from './adsmanagemet.png';
+import social from './social.png';
 export {
     backEnd,
     design,
@@ -38,6 +41,9 @@ export {
     works2,
     works3,
     works4,
-    logo
+    logo,
+    appdev,
+    adsmanagemet,
+    social
 }
 

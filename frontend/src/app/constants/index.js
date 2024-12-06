@@ -1,9 +1,11 @@
-
-import { instagram, linkedin } from "../assets/icons";
+import { instagram, linkedin, mail } from "../assets/icons";
 import { 
     backEnd, 
     design, 
-    frontEnd, 
+    frontEnd,
+    appdev,
+    adsmanagemet,
+    social,
     team1, 
     team2, 
     team3, 
@@ -42,7 +44,7 @@ export const navbar = {
 
 export const hero = {
     heading: 'Next Generation \nDigital Agency',
-    body: 'We bring to life the most complex projects, specialize in online \nbooking systems and the creation of aggregator sites'
+    body: 'WE CONNECT - WE CREATE - WE GROW <br>HELPING YOU BUILD YOUR DREAM DIGITAL PRESENCE IS OUR 1st GOAL'
 };
 
 export const aboutUs = {
@@ -71,17 +73,17 @@ export const services = {
         },
         {
             title: 'App Dev',
-            img: `${frontEnd.src}`,
+            img: `${appdev.src}`,
             altText: 'App Dev'
         },
         {
             title: 'Social Media Management',
-            img: `${backEnd.src}`,
+            img: `${social.src}`,
             altText: 'Social Media Management'
         },
         {
             title: 'Ads Management',
-            img: `${backEnd.src}`,
+            img: `${adsmanagemet.src}`,
             altText: 'Ads Management'
         }
     ]
@@ -162,13 +164,14 @@ export const footer = {
     name: 'YourAds',
     cta: [
         {
-            icon: `${linkedin.src}`,
-            altText: 'Linkedin'
+            icon: `${mail.src}`,
+            altText: 'Mail',
+            href: 'mailto:clicksm052@gmail.com'
         },
-        {
-            icon: `${instagram.src}`,
-            altText: 'Instagram'
-        }
+        // {
+        //     icon: `${instagram.src}`,
+        //     altText: 'Instagram'
+        // }
     ],
     links: [
         {
