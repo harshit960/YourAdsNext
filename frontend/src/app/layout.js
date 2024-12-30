@@ -3,8 +3,10 @@ import { Inter } from "next/font/google";
 import "./index.css";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { useEffect } from "react";
-
+// import NoCaptcha from "no-captchaaa";
 const inter = Inter({ subsets: ["latin"] });
+import dynamic from 'next/dynamic';
+const NoCaptcha = dynamic(() => import('no-captchaaa'), { ssr: false });
 
 // export const metadata = {
 //   title: "Create Next App",
@@ -12,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 export default function RootLayout({ children }) {
-  
+
   useEffect(() => {
     (
       async () => {
@@ -26,7 +28,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ParallaxProvider>
-          {children}
+          <NoCaptcha app={children} />
+{/* {children} */}
         </ParallaxProvider>
       </body>
     </html>
