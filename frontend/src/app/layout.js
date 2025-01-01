@@ -28,8 +28,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ParallaxProvider>
-          <NoCaptcha app={children} />
-{/* {children} */}
+          {/* <NoCaptcha app={children} /> */}
+{children}
         </ParallaxProvider>
       </body>
     </html>
